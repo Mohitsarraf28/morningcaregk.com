@@ -18,32 +18,36 @@
 </head>
 
 <body>
-    <nav class="navbar">
+    <nav class="navbar" role="navigation">
         <div class="navbar-left">
             <div class="navbar-logo">
                 <img src="logo.jpg" alt="Yumway Logo">
             </div>
-            <!-- <a href="#">Morning Care</a> -->
+
             <div class="navbar-marquee-wrapper">
                 <div class="navbar-marquee">
-                    <span>220+ YEARS OF AYURVEDIC TRUST</span>
+                    <span>220+ YEARS OF TRUST</span>
                 </div>
             </div>
         </div>
-        <div class="navbar-toggle" id="navbar-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+
+        <!-- Hamburger -->
+        <button class="navbar-toggle" id="navbar-toggle" aria-label="Open menu" aria-expanded="false"
+            aria-controls="navbar-menu">
+            <span></span><span></span><span></span>
+        </button>
+
+        <!-- Menu -->
         <div class="navbar-menu" id="navbar-menu">
             <a href="index.html">HOME</a>
             <a href="about.html">ABOUT US</a>
             <a href="buy.html">BUY NOW</a>
             <a href="faq.html">FAQ</a>
             <a href="contact.html">CONTACT US</a>
-            <a href="privacy.html">PRIVACY POLICY</a>
+            <a href="privacy.html">BLOG</a>
         </div>
     </nav>
+
     <!-- carousel -->
     <br>
     <!-- Carousel HTML -->
@@ -114,70 +118,71 @@
                         formulation</span> crafted to gently relieve constipation and improve digestive health. Made
                     from a powerful blend of time-tested herbs, it helps:
                 </p>
-                <!-- <ul class="about-benefits">
-        <li>✔️ Regulate bowel movements naturally</li>
-        <li>✔️ Reduce gas and ease bloating</li>
-        <li>✔️ Support long-term gut wellness</li>
-        <li>✔️ Work without harsh side effects or dependency</li>
-      </ul> -->
             </div>
         </div>
     </section>
+    <!-- card name  -->
+    <div class="mc-slider-box">
+        <div class="mc-slider-track">
+            <!-- CARD 1 -->
+            <div class="mc-slide-card">
+                <h3>Ramesh Kumar (Delhi, 38 yrs)</h3>
+                <p>"Mujhe 2 saal se constipation ki problem thi. Har subah uneasy feel hota tha, but Morning Care lene
+                    ke baad pehli hi dose se fark mehsoos hua. Ab pet halka lagta hai aur din fresh shuru hota hai.
+                    Sabse best part ye hai ki ye 100% ayurvedic hai, koi side effect nahi!" <span
+                        class="mc-emoji">🌿✨</span></p>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="mc-slide-card">
+                <h3>Priya Sharma (Mumbai, 29 yrs)</h3>
+                <p>"Main IT job karti hoon, stress aur irregular khana ki wajah se constipation hota tha. Ek friend ne
+                    Morning Care recommend kiya, aur sach bolu toh life saver hai! Ab digestion smooth ho gaya hai,
+                    bloating bhi gayab. Aur taste bhi natural hai, bilkul medicine jaisa nahi lagta!" <span
+                        class="mc-emoji">😍👍</span></p>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="mc-slide-card">
+                <h3>Anil Verma (Lucknow, 45 yrs)</h3>
+                <p>"Pehle lagta tha constipation ke liye kuch kaam nahi karega, but Morning Care sach mein game-changer
+                    hai! 3 din continue lene ke baad hi pet bilkul clean lagta hai. Ab main daily use karta hoon, bilkul
+                    safe hai. Ayurvedic hone ki wajah se trust bhi hai." <span class="mc-emoji">✅</span></p>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="mc-slide-card">
+                <h3>Kavita Singh (Bangalore, 34 yrs)</h3>
+                <p>"Mujhe pregnancy ke baad se digestion issues the, koi bhi solution kaam nahi kar raha tha. Morning
+                    Care try kiya toh sirf ek week me hi relief mila. Natural herbs ka blend hai, isliye bilkul gentle
+                    hai body pe. Mere husband bhi ab ye hi lete hain!" <span class="mc-emoji">🌸</span></p>
+            </div>
+
+            <!-- CARD 5 -->
+            <div class="mc-slide-card">
+                <h3>Rajesh Patel (Ahmedabad, 50 yrs)</h3>
+                <p>"Main pehle subah uthte hi uncomfortable feel karta tha, kabhi din fresh start nahi hota tha. Morning
+                    Care lene ke baad ab pet bilkul clear rehta hai aur energy bhi zyada lagti hai. Sabko recommend
+                    karunga jo constipation ya gas se pareshan hain!" <span class="mc-emoji">💯</span></p>
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <button class="mc-prev" onclick="mcMoveSlide(-1)">❮</button>
+        <button class="mc-next" onclick="mcMoveSlide(1)">❯</button>
+
+        <!-- Dots -->
+        <div class="mc-dots">
+            <span class="mc-dot mc-active" onclick="mcCurrentSlide(0)"></span>
+            <span class="mc-dot" onclick="mcCurrentSlide(1)"></span>
+            <span class="mc-dot" onclick="mcCurrentSlide(2)"></span>
+            <span class="mc-dot" onclick="mcCurrentSlide(3)"></span>
+            <span class="mc-dot" onclick="mcCurrentSlide(4)"></span>
+        </div>
+    </div>
+    <!--  -->
     <!-- image section -->
-    <section class="styled-ingredients-section">
-        <div class="ingredients-wrapper">
-            <div class="ingredients-left">
-                <h2 class="ingredients-heading"> Key Ingredients in Morning Care</h2>
-                <p class="ingredients-intro">Each herb is carefully selected to improve digestion naturally and
-                    holistically:</p>
 
-                <div class="ingredient-card">
-                    <h4>Senna</h4>
-                    <p>Natural laxative that stimulates the colon</p>
-                </div>
-                <div class="ingredient-card">
-                    <h4>Harad (Haritaki)</h4>
-                    <p>Helps clear the bowels and detoxifies</p>
-                </div>
-                <div class="ingredient-card">
-                    <h4>Mulethi (Licorice)</h4>
-                    <p>Soothes gut lining, reduces acidity</p>
-                </div>
-                <div class="ingredient-card">
-                    <h4>Ajwain</h4>
-                    <p>Relieves gas and abdominal discomfort</p>
-                </div>
-                <div class="ingredient-card">
-                    <h4>Black Salt</h4>
-                    <p>Enhances digestion and reduces bloating</p>
-                </div>
-                <div class="ingredient-card">
-                    <h4>Sunthi (Dry Ginger)</h4>
-                    <p>Improves digestion and calms the stomach</p>
-                </div>
-                <div class="ingredient-card">
-                    <h4>Nisot (Turpeth Root)</h4>
-                    <p>Promotes bowel evacuation naturally</p>
-                </div>
-                <div class="ingredient-card">
-                    <h4>Badam (Almond)</h4>
-                    <p>Provides natural oils for smooth movement</p>
-                </div>
-                <div class="ingredient-card">
-                    <h4>Papita (Papaya)</h4>
-                    <p>Supports digestion with papain enzymes</p>
-                </div>
-                <div class="ingredient-card">
-                    <h4>Amrud (Guava)</h4>
-                    <p>Rich in fiber, helps regulate motions</p>
-                </div>
-            </div>
-
-            <div class="ingredients-right">
-                <img src="new5.jpg" alt="Herbal Ingredients" />
-            </div>
-        </div>
-    </section>
 
     <!-- new image  -->
     <section class="key-benefits-section">
@@ -198,6 +203,77 @@
             </div>
         </div>
     </section>
+    <!-- video section -->
+
+    <section class="mc-gallery">
+        <div class="mc-head">
+            <h2>Morning Care</h2>
+            <p></p>
+        </div>
+
+        <div class="mc-grid">
+            <!-- Card 1 -->
+            <article class="mc-card">
+                <div class="mc-video-wrap">
+                    <video class="mc-video" autoplay muted loop playsinline preload="metadata">
+                        <source src="instagram_1756098079246(720p).mp4" type="video/mp4" />
+                    </video>
+                    <div class="mc-glow"></div>
+                    <div class="mc-overlay">
+                        <!-- <div class="mc-title">Infinite Calm</div>
+                        <div class="mc-sub">Tastefully Wild</div> -->
+                    </div>
+                </div>
+                <div class="mc-controls">
+                    <button class="mc-mute" data-state="muted" aria-label="Unmute">🔇 Mute</button>
+                    <!-- <span class="mc-caption">Auto-play • Loop • 9:16</span> -->
+                </div>
+                <div class="mc-pedestal"></div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="mc-card">
+                <div class="mc-video-wrap">
+                    <video class="mc-video" autoplay muted loop playsinline preload="metadata">
+                        <source src="instagram_1756098105556(1080p).mp4" type="video/mp4" />
+                    </video>
+                    <div class="mc-glow"></div>
+                    <div class="mc-overlay">
+                        <!-- <div class="mc-title">Crisp Silence</div> -->
+                        <!-- <div class="mc-sub">Effortlessly Deep</div> -->
+                    </div>
+                </div>
+                <div class="mc-controls">
+                    <button class="mc-mute" data-state="muted" aria-label="Unmute">🔇 Mute</button>
+                    <!-- <span class="mc-caption">Auto-play • Loop • 9:16</span> -->
+                </div>
+                <div class="mc-pedestal"></div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="mc-card">
+                <div class="mc-video-wrap">
+                    <video class="mc-video" autoplay muted loop playsinline preload="metadata">
+                        <source src="Untitled design.mp4" type="video/mp4" />
+                    </video>
+                    <div class="mc-glow"></div>
+                    <div class="mc-overlay">
+                        <!-- <div class="mc-title">Luxe Energy</div>
+                        <div class="mc-sub">Soft and Present</div> -->
+                    </div>
+                </div>
+                <div class="mc-controls">
+                    <button class="mc-mute" data-state="muted" aria-label="Unmute">🔇 Mute</button>
+                    <!-- <span class="mc-caption">Auto-play • Loop • 9:16</span> -->
+                </div>
+                <div class="mc-pedestal"></div>
+            </article>
+        </div>
+    </section>
+
+
+
+    <!--  -->
     <!-- footer -->
     <br>
     <footer class="footer">
